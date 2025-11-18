@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Arsenal Pós-Formatação</title>
+    <style>
+        /* --- IMPORTAÇÃO DAS FONTES (Estilo NVIDIA e Steam) --- */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap');
+        
+        /* Fontes Usadas:
+          'Roboto' (Peso 700) -> Para Títulos
+          'Open Sans' (Peso 400, 600) -> Para Texto/Corpo
+        */
+
+        /* --- Animação de Load-in --- */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- Configurações Globais --- */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #121212;
+            background-image: radial-gradient(circle at center, #1f1f1f, #121212 60%);
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0rem 2.5rem 2.5rem 2.5rem; /* Padding adicionado no final */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- Títulos Principais --- */
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #76b900; 
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #aaa;
+            margin-top: -15px;
+            font-weight: 300; 
+        }
+
+        /* --- Layout em Grid (Ninite) --- */
+        .ninite-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px; 
+            margin-top: 2.5rem;
+        }
+
+        /* --- Formato "Cartão de Vidro" --- */
+        .category-group {
+            background-color: rgba(30, 30, 30, 0.7); 
+            backdrop-filter: blur(8px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); 
+            
+            animation: fadeInUp 0.5s ease-out forwards;
+            opacity: 0; 
+        }
+
+        /* --- Título da Categoria (Estilo Ninite) --- */
+        .category-group h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #eee;
+            margin: 0 0 1.2rem 0; 
+            padding: 0 0 10px 0;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+
+        /* --- Lista de Programas (Estilo Ninite) --- */
+        .program-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .program-list li {
+            margin-bottom: 6px;
+        }
+
+        /* --- Estilo aplicado aos links --- */
+        .program-list li a {
+            display: block;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #d0d0d0;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.25s ease;
+            border-left: 3px solid transparent; 
+        }
+        
+        /* --- Efeito Hover (Desliza + Borda) --- */
+        .program-list li a:hover {
+            color: #76b900;
+            font-weight: 600;
+            transform: translateX(5px); 
+            border-left-color: #76b900; 
+            background-color: transparent; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Arsenal Pós-Formatação</h1>
+        <p class="subtitle">Principais Ferramentas e Programas.</p>
+
+        <div class="ninite-layout">
+
+            <div class="category-group">
+                <h2>🔧 Ferramentas</h2>
+                <ul class="program-list">
+                    <li><a href="https://ninite.com/winrar/" target="_blank" title="Compressor/descompressor de arquivos .RAR e .ZIP (via Ninite).">WinRAR</a></li>
+                    <li><a href="https://ccleaner-portable.br.uptodown.com/windows/download/1103508380" target="_blank" title="Ferramenta para limpeza de disco e registro do sistema.">CCleaner</a></li>
+                    <li><a href="https://www.ccleaner.com/speccy/download" target="_blank" title="Utilitário para visualizar especificações detalhadas do hardware.">Speccy</a></li>
+                    <li><a href="https://ninite.com/revo/" target="_blank" title="Desinstalador avançado que remove sobras de programas (via Ninite).">Revo Uninstaller</a></li>
+                    <li><a href="https://github.com/Orbmu2k/nvidiaProfileInspector/releases/latest" target="_blank" title="Ferramenta avançada para editar perfis de drivers da NVIDIA.">Nvidia Profile Inspector</a></li>
+                    <li><a href="https://www.kingston.com/br/support/technical/ssdmanager" target="_blank" title="Software oficial para gerenciar e monitorar SSDs da Kingston.">Kingston SSD Manager</a></li>
+                    <li><a href="https://apps.microsoft.com/detail/xp89dcgq3k6vld?hl=pt-BR&amp;gl=BR" target="_blank" title="Conjunto de utilitários da Microsoft para otimizar o Windows.">Microsoft PowerToys</a></li>
+                </ul>
+            </div>
+
+            <div class="category-group">
+                <h2>📚 Programas</h2>
+                <ul class="program-list">
+                    <li><a href="https://apps.microsoft.com/detail/9ncbcszsjrsb?hl=pt-BR&amp;gl=BR" target="_blank" title="Cliente de streaming de música (versão da Microsoft Store).">Spotify</a></li>
+                    <li><a href="https://capcut.en.uptodown.com/windows/download/91204437" target="_blank" title="Editor de vídeo popular para desktop.">CapCut</a></li>
+                    <li><a href="https://www.affinity.studio/pt_br/download" target="_blank" title="Download do Affinity Designer, Photo e Publisher (concorrentes do Adobe).">Affinity Suite</a></li>
+                    <li><a href="https://www.office.com/" target="_blank" title="Hub online para Word, Excel, PowerPoint e outros apps do Office.">Microsoft Office</a></li>
+                    <li><a href="https://www.kaspersky.com.br/free-antivirus" target="_blank" title="Versão gratuita do antivírus da Kaspersky.">Kaspersky Antivírus</a></li>
+                    <li><a href="https://apps.microsoft.com/detail/xpdlmkftdhsd?hl=pt-BR&amp;gl=BR" target="_blank" title="Gerenciador de downloads e torrents (versão da Microsoft Store).">Free Download Manager</a></li>
+                </ul>
+            </div>
+
+            <div class="category-group">
+                <h2>🖥️ Drivers</h2>
+                <ul class="program-list">
+                    <li><a href="https://www.guru3d.com/download/display-driver-uninstaller-download" target="_blank" title="Remove completamente drivers de vídeo (NVIDIA/AMD/Intel).">DDU</a></li>
+                    <li><a href="https://www.asus.com/br/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x670e-plus/helpdesk_download?model2Name=TUF-GAMING-X670E-PLUS" target="_blank" title="Página de suporte e download de drivers para sua TUF X670E-PLUS.">X670E-Plus</a></li>
+                    <li><a href="https://www.nvidia.com/pt-br/drivers/" target="_blank" title="Página oficial de download de drivers da NVIDIA.">Nvidia Driver</a></li>
+                    <li><a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank" title="Pacote com todas as versões dos redistribuíveis do Visual C++.">Visual C++ (All-in-One)</a></li>
+                    <li><a href="https://apps.microsoft.com/detail/9nvjqjbdkn97?hl=pt-BR&amp;gl=BR" target="_blank" title="Codec para áudio Dolby Digital Plus.">Dolby Digital Plus Decoder</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-group">
+                <h2>🌐 Navegadores</h2>
+                <ul class="program-list">
+                    <li><a href="https://ninite.com/chrome/?" target="_blank" title="Instalador do navegador Google Chrome (via Ninite).">Google Chrome</a></li>
+                    <li><a href="https://ninite.com/edge/" target="_blank" title="Instalador do navegador Microsoft Edge (via Ninite).">Microsoft Edge</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-group">
+                <h2>🎮 Launchers</h2>
+                <ul class="program-list">
+                    <li><a href="https." target="_blank" title="Plataforma de jogos da Valve.">Steam</a></li>
+                    <li><a href="https://ubisoftconnect.com/" target="_blank" title="Plataforma de jogos da Ubisoft (antigo Uplay).">Uplay</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-group">
+                <h2>💡 Hubs</h2>
+                <ul class="program-list">
+                    <li><a href="https://www.corsair.com/us/en/s/icue" target="_blank" title="Software para controlar iluminação e desempenho de hardware Corsair.">Corsair iCUE</a></li>
+                    <li><a href="https://support.logi.com/hc/pt-br/articles/360025298133-Logitech-G-HUB" target="_blank" title="Software para controlar mouses, teclados e headsets da Logitech G.">Logitech G Hub</a></li>
+                </ul>
+            </div>
+
+            <div class="category-group">
+                <h2>🌎 Outros</h2>
+                <ul class="program-list">
+                    <li><a href="httpsa://apps.microsoft.com/detail/9pljwwsv01lk?hl=pt-BR&amp;gl=BR" target="_blank" title="Controla o brilho de múltiplos monitores pela bandeja do sistema.">Twinkle Tray</a></li>
+                    <li><a href="https://apps.microsoft.com/detail/9n0866fs04w8?hl=pt-BR&amp;gl=US" target="_blank" title="Ativa e gerencia o áudio espacial Dolby Atmos.">Dolby Access</a></li>
+                    <li><a href="https://tiva85.github.io/witcher3map/index.html" target="_blank" title="Mapa interativo completo para The Witcher 3.">The Witcher 3 - Map</a></li>
+                    <li><a href="https://controller.dl.playstation.net/controller/lang/pb/2100004.html" target="_blank" title="Driver oficial para usar o controle DualSense no PC.">PlayStation Accessories</a></li>
+                    <li><a href="https://apps.microsoft.com/detail/xp8jrf5sxv03zm?hl=pt-BR&amp;gl=BR" target="_blank" title="App para integrar seu celular Motorola ao Windows.">Motorola Smart Connect</a></li>
+                </ul>
+            </div>
+            
+        </div> </div> </body>
+</html>
